@@ -116,16 +116,16 @@
     </ion-item-group>
   </div>
 </ion-content>
-<ion-footer>
+<ion-footer >
   <ion-grid>
     <ion-row>
       <ion-col width-80>
         <ion-item>
-          <textarea outline [(ngModel)]="chatInput" placeholder="Message.." type="text" id="chatInput"></textarea>
+          <textarea #input outline [(ngModel)]="chatInput" placeholder="Message.." type="text" id="chatInput"></textarea>
         </ion-item>
       </ion-col>
       <ion-col width-20 class="align-end">
-        <button ion-button outline small (click)="sendChatMessage(chatInput); $event.preventDefault();" class="button button--orange button--outline button--small">Send</button>
+        <button ion-button outline small (click)="sendChatMessage(chatInput, $event);" class="button button--orange button--outline button--small">Send</button>
       </ion-col>
     </ion-row>
   </ion-grid>

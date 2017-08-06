@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  @ViewChild('input') obj;
+
   avatar: string;
   userName: string = "Haider";
   loading: any;
@@ -25,9 +26,9 @@ export class HomePage {
   offset: number = 0;
   noOlder: boolean = false;
   constructor(public navCtrl: NavController) {
-
   }
-  sendChatMessage(chatInput){
+  sendChatMessage(chatInput, e){
+    this.obj.nativeElement.focus();
     alert("send");
   }
 }
