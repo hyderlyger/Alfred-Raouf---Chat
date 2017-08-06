@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-navbar>
+    <!-- <ion-title>
+      <preload-image (click)="goToUserProfile(opponentId)" class="avatar-image" [ratio]="{w:1, h:1}" [src]="avatar"></preload-image>
+    </ion-title> -->
+    <ion-buttons start>{{userName}}</ion-buttons>
+    <ion-buttons end>
+      <button ion-button icon-only >Let’s Seena</button>
+      <button class="round-blue inverse" ion-button icon-only>?</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content direction="y" class="has-footer" id="chat-autoscroll">
+  <div id="chat-{{ chatId }}" class="chat">
+    <ion-item-group>
+      <ion-item>
+        <ion-grid no-padding class="mine">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="other">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="other">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="mine">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="mine">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="mine">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="other">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="other">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="other">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+      <ion-item>
+        <ion-grid no-padding class="mine">
+          <ion-row>
+            <ion-col no-padding class="content">
+              <p>{{ "I am message body" }}</p>
+              <!-- <small>{{ message.time | amTimeAgo }}</small> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+    </ion-item-group>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-80>
+        <ion-item>
+          <textarea outline [(ngModel)]="chatInput" placeholder="Message.." type="text" id="chatInput"></textarea>
+        </ion-item>
+      </ion-col>
+      <ion-col width-20 class="align-end">
+        <button ion-button outline small (click)="sendChatMessage(chatInput); $event.preventDefault();" class="button button--orange button--outline button--small">Send</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
+

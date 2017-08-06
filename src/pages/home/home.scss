@@ -1,0 +1,121 @@
+page-home {
+    textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .button--outline.button--small {
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .error {
+    background: #ff2525;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .toolbar {
+    contain: none;
+  }
+  small {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  ion-navbar {
+    color: #fff;
+  }
+  .chat {
+    padding-top: 50px;
+  }
+  .item-inner {
+    border: 0 !important;
+    padding: 0 !important;
+  }
+  .toolbar-content-md ion-title {
+    width: 60%;
+    pointer-events: initial;
+    margin: 0 20%;
+  }
+  preload-image,
+  img {
+    position: absolute;
+    max-width: 70px;
+    height: 70px;
+    padding: 0 !important;
+    left: 50% !important;
+    margin-left: -35px !important;
+    border-radius: 50%;
+    &[src$="svg"] {
+      background: #fff;
+      padding: 10px;
+    }
+  }
+  .toolbar {
+    overflow: visible;
+  }
+  .mine {
+    ion-row {
+      text-align: right;
+    }
+    ion-col{
+      background: #31a5fc;
+      color: #fff;
+      padding: 10px !important;
+      border-radius: 10px;
+      flex-grow: 0;
+    }
+    p {
+      color: #fff;
+      font-size: 15px;
+      white-space: pre-wrap;
+    }
+    small {
+      text-align: right;
+    }
+  }
+  .other {
+    ion-col{
+      background: #fff;
+      color: #31a5fc;
+      border: 1px solid #31a5fc;
+      padding: 10px !important;
+      border-radius: 10px;
+      flex-grow: 0;
+    }
+    p {
+      font-size: 15px;
+      white-space: pre-wrap;
+      color: #31a5fc;
+    }
+  }
+  ion-label {
+    white-space: normal;
+    ion-grid {
+      display: block;
+      width: auto;
+      ion-row {
+        display: block !important;
+        width: auto;
+        ion-col {
+          display: inline-block;
+          width: auto !important;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+.toolbar-md .back-button + ion-buttons[start].bar-buttons-md {
+  left: 50px;
+}
+.ios .input-cover {
+  position: static;
+}
